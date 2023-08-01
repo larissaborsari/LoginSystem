@@ -1,4 +1,5 @@
 package LoginSystem;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -61,8 +62,42 @@ public class LoginPage implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		
+		if(e.getSource() == resetButton) {
+			userIdField.setText("");
+			userPasswordField.setText("");
+		}
+		
+		if(e.getSource() == loginButton) {
+			
+			String userId = userIdField.getText();
+			String password = String.valueOf(userPasswordField.getPassword());
+			
+			if(loginInfo.containsKey(userId)) {
+				
+				if(loginInfo.get(userId).equals(password)) {
+					
+					messageLabel.setForeground(Color.green);
+					messageLabel.setText("Login Successful");
+					
+					WelcomePage welcomePage = new WelcomePage();
+				}
+				
+				else {
+					
+					messageLabel.setForeground(Color.red);
+					messageLabel.setText("Wrong Password");
+					
+				}
+			}
+			
+			else {
+				
+				messageLabel.setForeground(Color.red);
+				messageLabel.setText("User Not Found");
+				
+			}
+		}
 	}
 
 }
