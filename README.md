@@ -34,5 +34,14 @@ based on Bro Code Youtube tutorial -> [Youtube](https://rb.gy/h202s)
 <br>
 <br>
 <img width="985" alt="image" src="https://github.com/larissaborsari/LoginSystem/assets/81311347/c01a3158-a470-4c8e-80c8-48e4a5f94c8d">
+<br>
+<br>
+<br>
+<li>That`s what it looks like after setting the buttons</li>
+<br>
+<br>
+<img width="983" alt="Captura de Tela 2023-07-31 às 19 59 49" src="https://github.com/larissaborsari/LoginSystem/assets/81311347/5edbcaa1-6d04-41e1-9950-16307389581b">
+<br>
+<br>
 
 </ul>
