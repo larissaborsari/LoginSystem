@@ -1,4 +1,5 @@
 package LoginSystem;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
@@ -29,8 +30,17 @@ public class LoginPage implements ActionListener {
 		userIdLabel.setBounds(50,100,75,25);
 		userPasswordLabel.setBounds(50,150,75,25);
 		
+		messageLabel.setBounds(125,250,250,35);
+		messageLabel.setFont(new Font(null, Font.ITALIC, 25));
+		
+		userIdField.setBounds(125,100,200,25);
+		userPasswordField.setBounds(125,150,200,25);
+		
 		frame.add(userIdLabel);
 		frame.add(userPasswordLabel);
+		frame.add(messageLabel);
+		frame.add(userIdField);
+		frame.add(userPasswordField);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(420,420);
 		frame.setLayout(null);
